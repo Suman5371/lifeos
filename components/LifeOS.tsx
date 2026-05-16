@@ -90,8 +90,12 @@ const Icons = {
 // ============================================================
 // UTILITY FUNCTIONS
 // ============================================================
-const formatDate = (date) => new Date(date).toLocaleDateString("en-US", { month: "short", day: "numeric" });
-const formatCurrency = (n) => `₹${n.toLocaleString("en-IN")}`;
+const formatDate = (date: string | Date) =>
+  new Date(date).toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+  });
+  const formatCurrency = (n: number) => `₹${n.toLocaleString("en-IN")}`;
 const today = () => new Date().toISOString().split("T")[0];
 const todayLabel = () => new Date().toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" });
 
