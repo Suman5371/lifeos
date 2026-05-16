@@ -1789,7 +1789,7 @@ Current mode: ${mode}`;
 // SETTINGS
 function Settings() {
   const [profile, setProfile] = useLocalStorage("profile", {
-    name: "Arjun Sharma", college: "IIT Delhi", year: "3rd Year", branch: "Computer Science",
+    name: "Suman singh", college: "TMSL", year: "4th Year", branch: "Computer Science",
     targetCompanies: "Google, Microsoft, Amazon", budget: 15000,
   });
 
@@ -1875,7 +1875,7 @@ export default function LifeOS() {
   const [placements] = useLocalStorage("placements", SEED_PLACEMENTS);
   const [expenses] = useLocalStorage("expenses", SEED_EXPENSES);
   const [notes] = useLocalStorage("notes", SEED_NOTES);
-  const [profile] = useLocalStorage("profile", { name: "Arjun Sharma", college: "IIT Delhi" });
+  const [profile] = useLocalStorage("profile", { name: "Suman singh", college: "TMSL" });
   const [toasts, setToasts] = useState([]);
 
   const addToast = (message, type = "info") => {
