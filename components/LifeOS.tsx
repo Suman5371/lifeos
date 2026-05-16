@@ -99,7 +99,7 @@ const formatDate = (date: string | Date) =>
 const today = () => new Date().toISOString().split("T")[0];
 const todayLabel = () => new Date().toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" });
 
-function useLocalStorage(key, initial) {
+function useLocalStorage<T>(key: string, initial: T) {
   const [val, setVal] = useState(() => {
     try { const s = localStorage.getItem(key); return s ? JSON.parse(s) : initial; } catch { return initial; }
   });
