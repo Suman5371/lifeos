@@ -2021,7 +2021,7 @@ export default function LifeOS() {
         </div>
       </div>
 
-      {/* Main content */}git
+      {/* Main content */}
       <div style={{ flex: 1, display: "flex", flexDirection: "column", minWidth: 0 }}>
         {/* Topbar */}
         <div style={{
