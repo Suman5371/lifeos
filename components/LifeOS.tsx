@@ -33,7 +33,7 @@ const COLORS = {
 // ============================================================
 // ICONS (inline SVG components)
 // ============================================================
-const Icon = ({ d, size = 16, color = "currentColor", fill = "none", strokeWidth = 1.75 }) => (
+const Icon = ({ d, size = 16, color = "currentColor", fill = "none", strokeWidth = 1.75 }: { d: any; size?: number; color?: string; fill?: string; strokeWidth?: number }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill={fill} stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
     {Array.isArray(d) ? d.map((path, i) => <path key={i} d={path} />) : <path d={d} />}
   </svg>
@@ -2017,7 +2017,7 @@ export default function LifeOS() {
         </div>
       </div>
 
-      {/* Main content */}
+      {/* Main content */}git
       <div style={{ flex: 1, display: "flex", flexDirection: "column", minWidth: 0 }}>
         {/* Topbar */}
         <div style={{
